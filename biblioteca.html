@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index - Biblioteca</title>
+        <link rel="stylesheet" href="biblioteca.css">
+    </head>
+
+    <body>
+        <section>
+            <h1>Sistema Digital - Biblioteca Senai</h1>
+        </section>
+
+        <section id="abaCadastros">
+            <label for="tituloLivro">Título</label>
+            <input id="tituloLivro" type="text"><br>
+
+            <label for="editoraLivro">Editora</label>
+            <input id="editoraLivro" type="text"><br>
+
+            <label for="autorLivro">Autor</label>
+            <input id="autorLivro" type="text"><br>
+
+            <label for="anoLancamentoLivro">Ano de lançamento</label>
+            <input id="anoLancamentoLivro" type="number"><br>
+
+            <label for="numCopiasLivro">Cópias disponíveis</label>
+            <input id="numCopiasLivro" type="number"><br>
+
+        </section>
+        <section id="buttonsCadastro">
+            <button onclick="cadastrarNovoLivro()">Cadastrar novo livro</button>
+            <button onclick="listarCadastrados()">Mostrar livros cadastrados</button>
+        </section>
+        <section id="todosCadastros"></section>
+
+        <section id="outrasOpcoes">
+            <h2>Outras opções</h2>
+            <form onsubmit="return false">
+                <input type="radio" name="radioOutrasOpcoes" value="excluirCadastro">
+                <label>Excluir cadastro de Livro</label><br>
+
+                <input type="radio" name="radioOutrasOpcoes" value="editarCadastro">
+                <label>Editar cadastro de Livro</label><br>
+
+                <input type="radio" name="radioOutrasOpcoes" value="listarEditora">
+                <label>Listar livros por Editora</label><br>
+
+                <input type="radio" name="radioOutrasOpcoes" value="listarAutor">
+                <label>Listar livros por Autor</label><br>
+
+                <input type="radio" name="radioOutrasOpcoes" value="consultarNumCopias">
+                <label>Consultar quantidade de cópias</label><br>
+
+                <button onclick="executarOutraOpcao()">Executar</button><br>
+                <button onclick="sairSistema()">Sair</button>
+            </form>
+        </section>
+
+        <script src="biblioteca.js"></script>
+    </body>
+</html>

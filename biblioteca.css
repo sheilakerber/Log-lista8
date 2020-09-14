@@ -1,0 +1,95 @@
+body {
+    background-color: rgba(65, 189, 160, 0.2);
+    text-align: center;
+    margin: 20px 30px;
+    height: 90vh;
+    width: 90vw;
+}
+
+body #abaCadastros label {
+    text-align: right;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#todosCadastros {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+    color: rgb(56, 167, 141);
+}
+
+#abaCadastros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2px;
+}
+
+#abaCadastros input {
+    margin-right: 50px;
+    margin-left: 0;
+    font-weight: 12pt;
+    padding: 4px;
+    margin: 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(205, 205, 205, 0.2);
+}
+
+#abaCadastros input:hover {
+    background-color: rgba(205, 205, 205, 0.4);
+}
+
+#abaCadastros label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#buttonsCadastro,
+#todosCadastros {
+    background-color: rgba(65, 189, 160, 0.01);
+}
+
+#outrasOpcoes {
+    color: rgb(56, 167, 141);
+}
+
+#outrasOpcoes label {
+    color: black;
+}
+
+#outrasOpcoes label:hover {
+    font-weight: bold;
+}
+
+#outrasOpcoes input:hover {
+    cursor: pointer;
+}
+
+button {
+    background-color: rgba(56, 167, 141, 0.7);
+    padding: 8px;
+    font-size: 12pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgba(138, 249, 223, 0.8);
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#todosCadastros {
+    font-size: 13pt;
+}
