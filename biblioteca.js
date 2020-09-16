@@ -22,6 +22,25 @@ function livro(titulo, editora, autor, anoLancamento, numCopias) {
     this.numCopias = numCopias
 }
 
+//funcao para pesquisar um livro por titulo
+function pesquisarLivro() {
+
+    let pesquisa = titulo.value
+
+    if (pesquisa == "") {
+        alert("Insira um titulo para realizar a pesquisa.")
+    }
+
+    for (i = 0; i < livros.length; i++) {
+        if (livros[i].titulo == pesquisa) {
+            document.getElementById("editoraLivro").value = livros[i].editora
+            document.getElementById("autorLivro").value = livros[i].autor
+            document.getElementById("anoLancamentoLivro").value = livros[i].anoLancamento
+            document.getElementById("numCopiasLivro").value = livros[i].numCopias
+        }
+    }
+}
+
 //funcao que cadastra um novo livro
 function cadastrarNovoLivro() {
     var novoLivro = new livro(titulo.value, editora.value, autor.value, anoLancamento.value, numCopias.value)
@@ -29,13 +48,19 @@ function cadastrarNovoLivro() {
     alert("Informações cadastradas: " + "\n" + Object.values(livros[livros.length - 1]))
     console.log(livros)
 
-    //limpar inputs apos cadastrar livro
+    limparCampos()
+
+}
+
+//funcao para limpar os campos de input
+function limparCampos() {
     titulo.value = ""
     editora.value = ""
     autor.value = ""
     anoLancamento.value = ""
     numCopias.value = ""
 }
+
 
 //funcao que mostra todos os cadastrados na tela
 function listarCadastrados() {

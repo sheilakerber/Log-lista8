@@ -17,17 +17,26 @@ section {
     margin-bottom: 10px;
 }
 
+#tituloCadastro {
+    margin: 0;
+    padding: 2px;
+    border-radius: 10px 10px 0 0;
+}
+
 #todosCadastros {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-h1 {
+h1,
+h2 {
     color: rgb(56, 167, 141);
 }
 
 #abaCadastros {
     display: grid;
     grid-template-columns: 1fr 1fr 2px;
+    border-radius: 0;
+    margin-bottom: 0;
 }
 
 #abaCadastros input {
@@ -50,7 +59,11 @@ h1 {
     font-weight: bold;
 }
 
-#buttonsCadastro,
+#buttonsCadastro {
+    border-radius: 0 0 10px 10px;
+    margin-top: 0;
+}
+
 #todosCadastros {
     background-color: rgba(65, 189, 160, 0.01);
 }
@@ -80,6 +93,7 @@ button {
     border: none;
     border-radius: 5px;
     margin-top: 10px;
+    width: 175px;
 }
 
 button:hover {

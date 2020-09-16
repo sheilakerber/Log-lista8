@@ -12,6 +12,10 @@
             <h1>Sistema Digital - Biblioteca Senai</h1>
         </section>
 
+        <section id="tituloCadastro">
+            <h2>Cadastro | Pesquisa</h2>
+        </section>
+
         <section id="abaCadastros">
             <label for="tituloLivro">Título</label>
             <input id="tituloLivro" type="text"><br>
@@ -27,12 +31,15 @@
 
             <label for="numCopiasLivro">Cópias disponíveis</label>
             <input id="numCopiasLivro" type="number"><br>
+        </section>
 
-        </section>
         <section id="buttonsCadastro">
-            <button onclick="cadastrarNovoLivro()">Cadastrar novo livro</button>
-            <button onclick="listarCadastrados()">Mostrar livros cadastrados</button>
+            <button onclick="pesquisarLivro()">Pesquisar</button>
+            <button onclick="limparCampos()">Limpar</button>
+            <button onclick="cadastrarNovoLivro()">Cadastrar</button>
+            <button onclick="listarCadastrados()">Mostrar cadastrados</button>
         </section>
+
         <section id="todosCadastros"></section>
 
         <section id="outrasOpcoes">
@@ -53,7 +60,7 @@
                 <input type="radio" name="radioOutrasOpcoes" value="consultarNumCopias">
                 <label>Consultar quantidade de cópias</label><br>
 
-                <button onclick="executarOutraOpcao()">Executar</button><br>
+                <button onclick="executarOutraOpcao()">Executar</button>
                 <button onclick="sairSistema()">Sair</button>
             </form>
         </section>
